@@ -31,8 +31,11 @@ public class MainActivity extends Activity {
 
         @Override
         protected void onDraw(Canvas canvas) {
-            // Dibuja algo en el canvas
-
+            Paint pincel = new Paint();
+            pincel.setColor(Color.BLUE);
+            pincel.setStrokeWidth(8);
+            pincel.setStyle(Style.STROKE);
+            canvas.drawCircle(100, 100, 50, pincel);
         }
     }
 }
