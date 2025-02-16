@@ -36,6 +36,8 @@ public class MainActivity extends Activity {
             pincel.setStrokeWidth(8);
             pincel.setStyle(Style.STROKE);
             canvas.drawCircle(100, 100, 50, pincel);
+            pincel.setColor(getResources().getColor(R.color.color_circulo));
+            canvas.drawCircle(150, 250, 100, pincel);
         }
     }
 }
