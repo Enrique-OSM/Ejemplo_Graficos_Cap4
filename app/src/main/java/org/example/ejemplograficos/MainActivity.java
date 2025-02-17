@@ -30,8 +30,8 @@ public class MainActivity extends Activity {
         private Drawable miImagen;
         public EjemploView (Context context) {
             super(context);
-            miImagen = AppCompatResources.getDrawable(context, R.drawable.mi_imagen);
-            miImagen.setBounds(30,30,200,200);
+            miImagen = AppCompatResources.getDrawable(context, R.drawable.estrella);
+            miImagen.setBounds(30, 30, 1000, 1000);
         }
 
         @Override
