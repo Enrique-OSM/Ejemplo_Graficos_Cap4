@@ -8,6 +8,8 @@ import android.graphics.Paint.Style;
 import android.graphics.Path;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
 import android.view.View;
 import android.graphics.Canvas;
@@ -27,11 +29,12 @@ public class MainActivity extends Activity {
         setContentView(new EjemploView(this));
     }
     public class EjemploView extends View {
-        private Drawable miImagen;
+        private ShapeDrawable miImagen;
         public EjemploView (Context context) {
             super(context);
-            miImagen = AppCompatResources.getDrawable(context, R.drawable.pen_line_svgrepo_com);
-            miImagen.setBounds(30, 30, 200, 200);
+            miImagen = new ShapeDrawable(new OvalShape());
+            miImagen.getPaint().setColor(0xff0000ff);
+            miImagen.setBounds(10, 10, 310, 60);
         }
 
         @Override
